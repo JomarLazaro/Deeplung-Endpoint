@@ -8,7 +8,7 @@ import io
 import base64
 
 class ChestXRayModel:
-    def __init__(self, model_path="src/model/deeplung-model.pt"):
+    def __init__(self, model_path="deeplung-model.pt"):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.categories = ["NORMAL", "PNEUMONIA", "UNKNOWN", "TUBERCULOSIS"]
 
